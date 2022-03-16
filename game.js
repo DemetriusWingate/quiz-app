@@ -12,35 +12,35 @@ let availableQuestions = [];
 
 let questions = [
     {
-        question: 'What is 2 + 2?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'What is the capitol of Kentucky?',
+        choice1: 'Danville',
+        choice2: 'Frankfort',
+        choice3: 'Louisville',
+        choice4: 'Lexington',
+        answer: 2,
+    },
+    {
+        question: 'What is the Kentucky state bird?',
+        choice1: 'Cardinal',
+        choice2: 'Blue Jay',
+        choice3: 'Parakeet',
+        choice4: 'Eagle',
         answer: 1,
     },
     {
-        question: 'What is 12 - 10?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
-        answer: 1,
-    },
-    {
-        question: 'What is 45 - 28?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'What is element O2 mean?',
+        choice1: 'Nitrogen',
+        choice2: 'Sodium',
+        choice3: 'Iron',
+        choice4: 'Oxygen',
         answer: 4,
     },
     {
-        question: 'What is 9 + 12?',
-        choice1: '2',
-        choice2: '4',
-        choice3: '21',
-        choice4: '17',
+        question: 'What sound does a dog make?',
+        choice1: 'Moo',
+        choice2: 'Meow',
+        choice3: 'Bark',
+        choice4: 'All of the above',
         answer: 3,
     }
 ]
@@ -59,7 +59,7 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('./end.html');
     }
 
     questionCounter++;
